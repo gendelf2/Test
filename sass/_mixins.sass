@@ -1,0 +1,36 @@
+
+@mixin link() 
+  text-align: center
+  text-transform: uppercase
+  text-decoration: none
+
+
+@mixin transition($transition) 
+    -moz-transition:    $transition
+    -o-transition:      $transition
+    -webkit-transition: $transition
+    transition:         $transition
+
+
+
+@mixin border-radius($radius) 
+  -webkit-border-radius: $radius
+     -moz-border-radius: $radius
+      -ms-border-radius: $radius
+          border-radius: $radius
+
+
+@mixin b($url) 
+  background-image: url($url)
+  background-size: cover
+  background-repeat: no-repeat
+
+
+@mixin opacity($trans) 
+  opacity: $trans
+  filter: alpha(opactiy=($trans*100))
+
+@mixin font($ff,$fs,$c) 
+  font-family: $ff
+  font-size: $fs
+  color: $c

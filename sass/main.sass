@@ -1,0 +1,510 @@
+@import "vars"
+@import "libs"
+@import "base"
+@import "mixins"
+.active_menu
+ color: #000
+ background: #D0D0D0
+#touch_menu
+ height: 72px
+.yellow
+ color: yellow
+.blue
+ color: #009DDA 
+.nav .dropdown
+ display: none
+ width: 212px
+ position: absolute
+ top: 78px 
+ border-top: 2px solid #FFF200
+ text-align: left
+ background: url("../img/dropdown.png") no-repeat
+ background-size: cover
+ left: -1px
+ padding: 10px 0px
+ color: #fff
+.nav .dropdown_bottom
+ display: none
+ width: 212px
+ position: absolute
+ left: 212px
+ top: 6px
+ border-top: 2px solid #FFF200
+ text-align: left
+ background: url("../img/dropdown.png") no-repeat
+ background-size: cover
+ padding: 10px 0px
+ color: #fff
+.nav .dropdown li
+ position: relative
+ float: none
+ padding: 0px 20px
+ padding-top: 8px
+.nav .dropdown li a 	
+ text-decoration: none
+ padding-left: 7px
+ color: #fff
+
+.nav .dropdown li:hover
+ color: yellow 
+.nav .dropdown li:hover a
+ color: yellow  
+.nav .dropdown li:hover .dropdown_bottom li
+ color: #fff 
+.nav .dropdown li:hover .dropdown_bottom a
+ color: #fff  
+
+.nav .dropdown .dropdown_bottom li:hover
+ color: yellow 
+.nav .dropdown .dropdown_bottom li:hover a
+ color: yellow  
+
+.nav .dropdown li:hover .dropdown_bottom,.dropdown 
+ display: block
+ /********************  HEADER BEGIN ********************/
+header .bx-wrapper
+ background: none 
+ border: none
+ box-shadow: none
+ margin-bottom: 0px
+ position: static
+header .bx-wrapper .bx-pager
+ margin-top: 300px
+header .bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager
+ bottom: 35px
+header .bx-wrapper .bx-controls-direction a
+ width: 72px
+ height: 72px 
+header .bx-wrapper .bx-prev
+ background: url("../img/left_arrow.png") no-repeat 
+header .bx-wrapper .bx-next
+ display: block
+ background: url("../img/right_arrow.png") no-repeat  
+header .bx-wrapper .bx-next:focus, .bx-wrapper .bx-next:hover 
+ background-position: 0px 0px
+header .bx-wrapper .bx-pager.bx-default-pager a
+ width: 7px 
+ height: 7px
+ margin: 6px
+ background: #B7B7B7
+header .bx-pager-item 
+ background: none
+header .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus, .bx-wrapper .bx-pager.bx-default-pager a:hover
+ background: #fff 
+ /********************  HEADER END ********************/
+
+ /********************  CHOISE BEGIN ********************/
+
+.choise 
+ text-align: center
+ padding-top: 115px
+.choise_top
+ font-family: LatoBold
+ font-size: 35px
+ font-weight: 700
+ line-height: 24px
+ text-transform: uppercase
+.choise_bottom
+ font-family: LatoRegular
+ font-size: 14px
+ margin-top: 40px
+ font-weight: 400
+ line-height: 24px
+.choise
+ &_item
+  border: 1px solid #ccc
+  padding-top: 35px  
+  width: 200px
+  float: left
+  margin: 13px
+  position: relative
+  height: 280px
+  margin-bottom: 118px
+  &_top i
+   font-size: 80px
+   color: #533694
+  &_center
+   position: absolute
+   z-index: 1
+   width: 100%
+   margin-top: 14px
+   &_top
+    color: #232323
+    font-family: LatoHeavy
+    font-size: 14px
+    font-weight: 800
+    line-height: 60px
+    text-transform: uppercase
+   &_bottom
+    color: #373737
+    font-family: LatoLight
+    font-size: 14px
+    font-weight: 300
+    line-height: 20px
+    margin-bottom: 35px
+  &_bottom
+   z-index: 2
+   width: 100%
+   background: #533694
+   position: absolute
+   bottom: 0px
+   height: 147px
+   height: 0px 
+   overflow: hidden
+   &_zag
+    color: white
+    font-family: LatoSemibold
+    font-size: 14px
+    font-weight: 600
+    line-height: 60px
+    text-transform: uppercase
+   &_center
+    width: 100px
+    margin-right: auto
+    margin-left: auto 
+   &_center a
+    color: #fff
+    background: none
+    margin-left: 3px
+    width: 40px
+    padding-top: 6px
+    display: inline-block
+    height: 40px
+    border-radius: 40px  
+    border: 1px solid #fff
+    -moz-transition: 0.5s
+    -o-transition: 0.5s
+    -webkit-transition: 0.5s
+    transition: 0.5s
+   &_center a:hover
+    color: #533694    
+    border: none
+    background: #fff
+
+ /****************  CHOISE END *******************/
+ /****************  PRODUCTS BEGIN *****************/
+.products 
+ z-index: 1
+ position: relative
+
+ &_top
+  background: url("../img/product_top.png")
+  background-size: cover
+  padding: 37px 0px
+  position: relative
+  text-transform: uppercase
+  background-repeat: no-repeat
+  font-family: LatoBold
+  text-align: center
+  color: #fff
+  z-index: 3
+  &_zag
+   margin-bottom: 46px
+ &_center
+  z-index: 2
+  position: relative
+  top: -38px
+  padding-bottom: 172px
+  background: url("../img/product_center.png")
+  background-size: cover
+  background-repeat: no-repeat
+  text-align: center
+  &_item
+   margin-top: 115px
+   &_left
+    float: left
+    width: 41%
+   &_right
+    width: 59%
+    float: right
+    padding-left: 16px
+    text-align: left
+    &_top
+     color: #232323
+     font-family: LatoHeavy
+     font-size: 19px
+     font-weight: 800
+     text-transform: uppercase 
+    &_center
+     color: #503392
+     font-family: LatoRegular
+     font-size: 16px
+     font-weight: 400
+    &_bottom
+     color: #373737
+     font-family: LatoLight
+     font-size: 12px
+     font-weight: 300
+   &_left img 
+    width: 150px
+    height: 150px   
+.products  .bx-prev, .bx-next
+ display: none   
+.products .bx-wrapper
+ background: none 
+ border: none
+ box-shadow: none
+ margin-bottom: 0px
+ position: static 
+.products .bx-wrapper .bx-pager.bx-default-pager a
+ width: 7px 
+ height: 7px
+ margin: 6px
+ background: #D7D7D7 
+.products  .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus, .bx-wrapper .bx-pager.bx-default-pager a:hover
+ background: #503392  
+
+ /****************  PRODUCTS END *******************/
+ /****************  ABOUT BEGIN *******************/
+.about
+ text-align: left
+ padding-top: 120px
+ padding-bottom: 120px
+ &_left
+  &_top
+   font-family: LatoBold
+   font-size: 35px
+   font-weight: 700
+   line-height: 24px
+   text-transform: uppercase
+  &_center
+   color: #999
+   font-family: LatoRegular
+   font-size: 14px
+   font-weight: 400
+   margin-top: 40px
+   line-height: 24px
+  &_bottom
+   color: #373737
+   font-family: LatoRegular
+   margin-top: 65px
+   font-size: 14px
+   font-weight: 400
+   line-height: 24px
+ &_right
+  padding-top: 115px  
+.meter 
+        height: 9px
+        float: left
+        width: 91%
+        position: relative
+        background: #fff
+        border: 1px solid #000
+        padding: 0px
+        -webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3)
+        -moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3)
+        box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3)
+.meter > span 
+       display: block
+       height: 100%
+       height: 5px
+       width: 0px
+       -webkit-border-top-right-radius: 8px
+       -webkit-border-bottom-right-radius: 8px
+       -moz-border-radius-top-right: 8px
+       -moz-border-radius-bottom-right: 8px
+       border-top-right-radius: 8px
+       border-bottom-right-radius: 8px
+       -webkit-border-top-left-radius: 20px
+       -webkit-border-bottom-left-radius: 20px
+       -moz-border-radius-top-left: 20px
+       -moz-border-radius-bottom-left: 20px
+       border-top-left-radius: 20px
+       border-bottom-left-radius: 20px
+       background-color: #009DDA
+  
+       position: relative
+       overflow: hidden
+       top: 1px
+       left: 2px
+.orange > span 
+        background-color: #f1a165
+        background-image: -moz-linear-gradient(top, #f1a165, #f36d0a)
+        background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f1a165),color-stop(1, #f36d0a))
+        background-image: -webkit-linear-gradient(#f1a165, #f36d0a)
+
+
+.red > span 
+        background-color: #f0a3a3
+        background-image: -moz-linear-gradient(top, #f0a3a3, #f42323)
+        background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f0a3a3),color-stop(1, #f42323))
+        background-image: -webkit-linear-gradient(#f0a3a3, #f42323)
+
+.animate > span:after 
+        display: none
+
+@-webkit-keyframes move 
+    0% 
+       background-position: 0 0
+    
+    100% 
+       background-position: 50px 50px
+    
+.meter > span:after, .animate > span > span 
+  -webkit-animation: move 2s linear infinite
+
+.about_left
+ &_bar
+  &_item
+   margin-top: 20px
+   &_top
+    width: 89%
+    float: left
+    position: relative 
+    &_left
+     text-align: left
+     float: left
+     color: #444
+     font-family: LatoBold
+     font-size: 13px
+     font-weight: 700
+     line-height: 60px
+    &_right
+     text-align: right 
+     float: right
+     color: #444
+     font-family: LatoBold
+     font-size: 13px
+     font-weight: 700
+     line-height: 60px
+   &_top  span
+     color: #444
+     font-family: LatoBold
+     font-size: 13px
+     font-weight: 700
+     line-height: 60px
+     float: right 
+     position: absolute
+     right: -12px
+     top: 0px
+ /****************  BOTTOM BEGIN *******************/    
+.bottom
+ text-align: center
+ &_zag
+  font-family: LatoBold
+  font-size: 35px
+  font-weight: 700
+  line-height: 24px
+  text-transform: uppercase
+ &_p
+  color: #999
+  font-family: LatoRegular
+  font-size: 14px
+  font-weight: 400
+  margin-top: 40px
+  line-height: 24px  
+  margin-bottom: 25px
+/****************  BOTTOM END *******************/
+input.footer_center_form_left_bottom_checkbox    
+ float: left
+ margin-top: 6px
+ margin-right: 10px
+.input_left
+ margin-right: 10px    
+/****************  FOOTER BEGIN *******************/ 
+.footer
+ position: relative
+ bottom: 0px
+ z-index: 1
+ &_top
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0px
+  background: #000
+  opacity: 0.6
+  z-index: 1
+ &_center 
+  position: absolute
+  top: 0px
+  z-index: 2
+  &_form
+   margin-top: 100px
+   padding: 80px 70px
+   color: #fff
+   background-color: rgba(26, 26, 26, 0.53)
+   &_left
+    float: left
+    &_top input
+     color: #9A9999
+     background: none
+     border: 1px solid #9A9999
+     width: 237px
+     padding: 16px
+     outline: none
+     float: left 
+    &_top
+     &_select
+      color: #9A9999
+      background: none
+      border: 1px solid #9A9999
+      width: 237px
+      padding: 19px
+      outline: none
+      float: left 
+
+    &_bottom input[type="submit"]
+     background: yellow
+     border: none
+     padding: 16px 40px
+     color: #000
+     outline: none
+     float: right
+    &_center
+      &_textarea
+       width: 100%
+       height: 150px
+       padding: 16px
+       outline: none
+       background: none
+       margin-top: 10px
+    &_bottom label
+     display: block
+     float: left
+     color: #9A9999
+     margin-top: 20px
+   &_right
+    float: right
+    text-align: left 
+    &_center
+     margin-top: 21px
+    &_bottom
+     margin-top: 22px
+     text-decoration: none
+    &_bottom a
+     text-decoration: none
+     color: #fff  
+ &_bottom
+  background: #1A1A1A
+  padding: 14px 11px
+  color: #7a7a7a
+  font-family: LatoRegular
+  font-size: 16px
+  font-weight: 400
+  position: relative
+  z-index: 6
+  line-height: 42px
+  &_left
+   float: left
+  &_left h2 
+   color: #7a7a7a
+   font-family: LatoRegular
+   font-size: 16px
+   font-weight: 400
+   line-height: 42px
+  &_right
+   float: right
+.facebook
+ color: #3C4C6B    
+.google
+ color: #C95D48
+.twitter
+ color: #71D6FA
+.dribble 
+ color: #EA789D   
+.footer_bottom_right .fa .fa-facebook
+ color: blue 
+.footer i
+ margin: 5px
+
+/****************  FOOTER END *******************/   

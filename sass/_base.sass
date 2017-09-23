@@ -1,0 +1,57 @@
+
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	overflow-x: hidden
+* 
+   box-sizing: border-box
+   margin: 0px
+   font-weight: normal
+img 
+  max-height: 100%
+  max-width: 100%
+  p
+   -webkit-margin-before: 0em;
+   -webkit-margin-after: 0em;
+   -webkit-margin-start: 0px;
+   -webkit-margin-end: 0px;
+.clearfix 
+  &:after 
+    content: ""
+    display: table
+    clear: both
+
+.left
+  float: left
+
+.right
+  float: right
+ul
+ -webkit-padding-start: 0px
